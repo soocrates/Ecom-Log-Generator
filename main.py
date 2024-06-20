@@ -64,10 +64,11 @@ def generate_logs(per_second, duration):
             action = get_next_action(user_id)
             log_entry = action(user_id, user_sessions, user_last_action)
             if log_entry:
-                print(log_entry)
+                yield log_entry  # Use yield to return log entry
         time.sleep(1)
 
 if __name__ == "__main__":
     logs_per_second = int(input("Enter the number of logs per second: "))
     duration_seconds = int(input("Enter the duration in seconds: "))
-    generate_logs(logs_per_second, duration_seconds)
+    for log in generate_logs(logs_per_second, duration_seconds):
+        print(log)
