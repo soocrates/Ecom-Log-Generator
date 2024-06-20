@@ -49,6 +49,8 @@ Setup:
 
 Ensure Python is installed on your system.
 Organize the files in the specified directory structure:
+
+```
 ecom_log_generator/
 ├── functions
 │   ├── log_functions.py
@@ -56,7 +58,13 @@ ecom_log_generator/
 │   └── user_agents.py
 ├── main.py
 └── README.md
+```
+
 Running the Program:
+
+```
+
+```
 
 Navigate to the ecom_log_generator directory in your terminal.
 Execute the main.py script:
