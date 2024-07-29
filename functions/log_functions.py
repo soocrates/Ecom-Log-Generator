@@ -31,7 +31,7 @@ def generate_weighted_time():
     hours = list(weights.keys())
     probabilities = [weights[hour] for hour in hours]
     normalized_probabilities = [float(i)/sum(probabilities) for i in probabilities]
-    chosen_hour = random.choices(hours, normalized_probabilities)[0]
+    chosen_hour =random.choices(hours, normalized_probabilities)[0]
     
     return datetime.now().replace(hour=chosen_hour, minute=random.randint(0, 59), second=random.randint(0, 59), microsecond=0)
 

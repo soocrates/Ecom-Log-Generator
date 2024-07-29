@@ -1,7 +1,5 @@
 # E-Commerce Log Generator
 
-Description:
-The E-Commerce Log Generator is a Python-based utility designed to simulate and generate realistic web server log data for an e-commerce platform. The program mimics various user interactions with an online store, including searching for products, viewing product details, adding and removing items from the cart, applying coupons, making purchases, and more. By generating synthetic logs, this tool helps developers, data analysts, and system administrators to test, analyze, and optimize their systems under different user scenarios and traffic conditions.
 
 Features:
 Realistic User Interaction Simulation:
@@ -69,7 +67,7 @@ Running the Program:
 Navigate to the ecom_log_generator directory in your terminal.
 Execute the main.py script:
 
-```python main.py
+```python
 Enter the desired number of logs per second and the duration (in seconds) when prompted.
 Output:
 ```
